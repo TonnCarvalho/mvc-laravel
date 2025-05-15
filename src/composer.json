@@ -1,0 +1,15 @@
+{
+    "name": "operador/mvc_base_laravel",
+    "require-dev": {
+        "symfony/var-dumper": "^7.2"
+    },
+    "authors": [
+        {
+            "name": "Cleiton",
+            "email": "cleiton_601@hotmail.com"
+        }
+    ],
+    "require": {
+        "fakerphp/faker": "^1.24"
+    }
+}
