@@ -1,7 +1,14 @@
 {
     "name": "operador/mvc_base_laravel",
     "require-dev": {
-        "symfony/var-dumper": "^7.2"
+        "symfony/var-dumper": "^7.2",
+        "fakerphp/faker": "^1.24"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/",
+            "core\\": "core/"
+        }
     },
     "authors": [
         {
@@ -10,6 +17,6 @@
         }
     ],
     "require": {
-        "fakerphp/faker": "^1.24"
+        "vlucas/phpdotenv": "^5.6"
     }
 }
