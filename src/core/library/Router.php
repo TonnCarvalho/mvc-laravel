@@ -11,16 +11,15 @@ class Router
     public function add(
         string $method,
         string $uri,
-        array $action
+        array $route
     ) {
-        $this->routes[$method][$uri] = $action;
+        $this->routes[$method][$uri] = $route;
     }
 
     public function execute()
     {
         foreach ($this->routes as $request => $routes) {
             if ($request === REQUEST_METHOD) {
-
                 return $this->handleUri($routes);
             }
         }
@@ -37,7 +36,6 @@ class Router
 
             $pattern = str_replace('/', '\/', trim($uri, '/'));
             if ($uri !== '/' && preg_match("/^$pattern$/", trim(REQUEST_URI, '/'), $matches)) {
-
                 [$this->controller, $this->action] = $route;
 
                 unset($matches[0]);
