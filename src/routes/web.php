@@ -1,9 +1,9 @@
 <?php
 
 use core\library\Router;
-use app\controller\HomeController;
-use app\controller\LoginController;
-use app\controller\ProductController;
+use app\controllers\HomeController;
+use app\controllers\LoginController;
+use app\controllers\ProductController;
 
 try {
     $router = new Router;
